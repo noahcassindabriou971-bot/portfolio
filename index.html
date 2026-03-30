@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel - Développeur web passionné">
+    <title>Portfolio - Cassin--Dabriou Noah</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav-container">
+        <div class="nav-content">
+            <a href="#accueil" class="nav-logo-profile" aria-label="Retour à l'accueil">
+                <div class="avatar-wrapper">
+                    <img src="images/cmoi.jpg" alt="Ma photo" class="nav-avatar">
+                </div>
+                <span class="logo-text">Noah</span>
+            </a>
+            
+            <div class="nav-desktop">
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#accueil" role="menuitem" class="nav-link active" aria-current="page">Accueil</a></li>
+                    <li role="none"><a href="#projets" role="menuitem" class="nav-link">Projets</a></li>
+                    <li role="none"><a href="#a-propos" role="menuitem" class="nav-link">À propos</a></li>
+                    <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-mobile">
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+                    <svg class="icon menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg class="icon close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="#accueil" class="mobile-menu-link">Accueil</a>
+            <a href="#projets" class="mobile-menu-link">Projets</a>
+            <a href="#a-propos" class="mobile-menu-link">À propos</a>
+            <a href="#contact" class="mobile-menu-link">Contact</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Page Accueil -->
+    <section id="accueil" class="page page-accueil active">
+        <div class="page-bg" role="presentation" aria-hidden="true">
+            <img src= "images/image1.jpg" alt="photo de trois BMW sur circuit" class="bg-image">
+            <div class="bg-overlay"></div>
+        </div>
+        
+        <div class="page-content">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <img src= "images/cmoi.jpg" alt="Photo de l'étudiant" class="profile-image">
+                </div>
+                
+                <h1 class="hero-title">Bienvenue sur mon Portfolio</h1>
+                <p class="hero-subtitle">Je suis Cassin--Dabriou Noah un étudiant en BUT MMI.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Projets -->
+    <section id="projets" class="page page-projets">
+        <div class="page-bg" role="presentation" aria-hidden="true">
+            <img src= "images/image2.jpg" alt="images de voitures entres les montagnes" class="bg-image">
+            <div class="bg-overlay"></div>
+        </div>
+        
+        <div class="page-content">
+            <div class="container">
+                <header class="section-header">
+                    <h1 class="section-title">Mes Projets</h1>
+                    <p class="section-subtitle">Découvrez une sélection de mes réalisations et projets récents</p>
+                </header>
+                
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src= "images/sitebateau.png" alt="bateau de pêcheur a quai">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Site web sur la pêche en guadeloupe</h2>
+                            <p class="project-description">Conception et développement d'un site vitrine mettant en avant les techniques de pêche traditionnelles et sportives en Guadeloupe. L'accent a été mis sur la mise en valeur du patrimoine maritime local à travers une interface fluide.</p>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>UI Design</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://noahcassindabriou971-bot.github.io/sae10.5/" class="btn btn-sm btn-primary">Voir</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projet 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src= "images/1000039403.jpg" alt="Aperçu du projet Dashboard Analytics">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Organisation d'un court métrage d'horreur</h2>
+                            <p class="project-description">organisation en groupe d'un projet audiovisuel. De l'écriture du scénario au découpage technique, nous avons géré la logistique, le planning de tournage et la coordination de l'équipe pour créer une ambiance immersive.</p>
+                            <ul class="project-tags">
+                                <li>Scénario</li>
+                                <li>Production</li>
+                                <li>Audiovisuel</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://youtu.be/OylP2kfyvFE" class="btn btn-sm btn-primary">Voir</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projet 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src= "images/affiche%20tokyo%20drift.png" alt="Affiche minimaliste film tokyo drift">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Création d'affiche pour un film</h2>
+                            <p class="project-description">Réinterprétation graphique de l'affiche du film culte. Travail sur la composition dynamique et l'intégration de typographies modernes pour un rendu minimaliste et percutant.</p>
+                            <ul class="project-tags">
+                                <li>Photoshop</li>
+                                <li>Composition</li>
+                                <li>Graphic Design</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary view-image">Voir</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projet 4 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src= "images/logo.png" alt="logo pour l'artiste michelangelo">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Réalisation de logo fictif pour un artiste</h2>
+                            <p class="project-description">Création d'un logo fictif pour un artiste. Le concept repose sur l'équilibre entre classicisme et modernité.</p>
+                            <ul class="project-tags">
+                                <li>Logo Design</li>
+                                <li>Branding</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary view-image">Voir</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projet 5 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src= "images/jdm.jpeg" alt="images de voitures japonaises">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Edits de voiture sur tiktok</h2>
+                            <p class="project-description">Création de contenus courts à fort impact visuel. Utilisation de techniques de montage avancées (speed ramping, synchronisation audio, transitions fluides) pour dynamiser la présentation de véhicules divers et engager une communauté passionnée.</p>
+                            <ul class="project-tags">
+                                <li>After Effects</li>
+                                <li>CapCut</li>
+                                <li>Montage Vidéo</li>
+                                <li>Réseaux Sociaux</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://www.tiktok.com/@carhubtdh971" class="btn btn-sm btn-primary">Voir</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projet 6 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src= "images/hassan.png" alt="Affiche Hassan Hajjaj pour une exposition fictive">
+                        </div>
+                        <div class="project-content">
+                            <h2 class="project-title">Création d'affiche pour une exposition fictive</h2>
+                            <p class="project-description">Conception d'une affiche d'exposition inspirée par l'esthétique "Pop Art Marocain" de l'artiste. Avec l'assemblage de couleurs vives et la mise en page structurée pour capturer l'essence de son œuvre.</p>
+                            <ul class="project-tags">
+                                <li>Photoshop</li>
+                                <li>Direction Artistique</li>
+                                <li>Mise en page</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary view-image">Voir</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page À propos -->
+    <section id="a-propos" class="page page-about">
+        <div class="page-bg" role="presentation" aria-hidden="true">
+            <img src= "images/image3.jpg" alt="images de voitures sur route de montagnes" class="bg-image">
+            <div class="bg-overlay"></div>
+        </div>
+        
+        <div class="page-content">
+            <div class="container">
+                <header class="section-header">
+                    <h1 class="section-title">À Propos de Moi</h1>
+                    <p class="section-subtitle">Passionné par le développement et la création d'expériences numériques originales</p>
+                </header>
+                
+                <section class="content-card">
+                    <h2 class="card-title">Mon Parcours</h2>
+                    <div class="card-text">
+                        <p>Mes centres d'intérêts sont les jeux vidéos, la musique, l'automobile et la pêche. J'utilise Canva pour le design, capcut et After effect pour le montage. Mon objectif professionnel serai de travailler dans le monde de l'audio visuel et tout ce qui s'en rapproche.</p>
+                        <p>Mon parcours m'a permis de travailler sur des projets variés, allant de sites web vitrines à des affiches de film ou d'exposition d'art. J'aime explorer de nouveaux horizons et apprendre continuellement de nouvelles technologies.</p>
+                        <p>Aujourd'hui, je mets mes compétences au service de projets innovants qui ont un impact positif.</p>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="section-title-sm">Mes Compétences</h2>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="skill-title">Développement WEB</h3>
+                                <p class="skill-description">Création de sites WEB divers avec HTML, CSS et Java Script.</p>
+                            </div>
+                        </article>
+                        
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="skill-title">Montage vidéo</h3>
+                                <p class="skill-description"> Réalisation de montage vidéo à l'aide de Capcut et After effect. .</p>
+                            </div>
+                        </article>
+                        
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="skill-title">UI/UX Design</h3>
+                                <p class="skill-description">Création de design divers à l'aide de figma, canva et photoshop.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                
+                <section class="content-card">
+                    <h2 class="card-title">Technologies Maîtrisées</h2>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Capcut</span>
+                        <span class="tech-tag">After effect</span>
+                        <span class="tech-tag">Photoshop</span>
+                        <span class="tech-tag">figma</span>
+                        <span class="tech-tag">canva</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Contact -->
+    <section id="contact" class="page page-contact">
+        <div class="page-bg" role="presentation" aria-hidden="true">
+            <img src= "images/images4.jpg" alt="image de voiture sous des arbres de cerisier blanc" class="bg-image">
+            <div class="bg-overlay"></div>
+        </div>
+        
+        <div class="page-content">
+            <div class="container">
+                <header class="section-header">
+                    <h1 class="section-title">Contactez-Moi</h1>
+                    <p class="section-subtitle">N'hésitez pas à me contacter pour toute question ou collaboration</p>
+                </header>
+                
+                <div class="contact-grid">
+                    <!-- Informations -->
+                    <section class="content-card">
+                        <h2 class="card-title">Informations de Contact</h2>
+                        
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <div>
+                                    <h3 class="contact-label">Email</h3>
+                                    <a href="mailto:dabrioucassinnoah@gmail.com" class="contact-link">dabrioucassinnoah@gmail.com</a>
+                                </div>
+                            </li>
+                            
+                            <li class="contact-item">
+                                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <div>
+                                    <h3 class="contact-label">Téléphone</h3>
+                                    <a href="tel:+590690293223" class="contact-link">+590 690 29 32 23</a>
+                                </div>
+                            </li>
+                            
+                            <li class="contact-item">
+                                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <div>
+                                    <h3 class="contact-label">Localisation</h3>
+                                    <p class="contact-text">Saint-Claude, Guadeloupe</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="social-section">
+                            <h3 class="social-title">Suivez-moi</h3>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/noah-cassin-dabriou-45b334389/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/noah_khymio/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tiktok.com/@carhubtdh971" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Tiktok">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <!-- Formulaire -->
+                    <section class="content-card">
+                        <h2 class="card-title">Envoyez un Message</h2>
+                        
+                        <form id="contact-form" action="https://formspree.io/f/mojpdqrn" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nom <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="votre.email@exemple.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Sujet <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Sujet du message" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" class="form-input" placeholder="Votre message..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                <span>Envoyer le message</span>
+                            </button>
+                            
+                            <div id="form-success" class="form-message success hidden" role="alert">
+                                Message envoyé avec succès ! Je vous répondrai bientôt.
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+<div id="project-modal" class="modal" style="display:none;">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+        <img id="modal-img" src="" alt="Aperçu du projet">
+        <h3 id="modal-title" style="text-align:center; margin-top:15px; color:white;"></h3>
+    </div>
+</div>
+</body>
+</html>
